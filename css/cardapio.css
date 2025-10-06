@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 425px;
+  height: 100%;
+  background: #000000;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 425px;
+  margin: 24px 0;
+  padding: 0 24px;
+  border-radius: 24px;
+}
+
+h1 {
+  font-family: "Zilla Slab", serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #f46036;
+}
+
+main p {
+  font-family: "Zilla Slab", serif;
+  font-size: 16px;
+  color: #eee5e9;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 12px;
+  list-style: none;
+  transition: background 0.3s ease;
+  border: 2px solid #1b1a1a;
+}
+
+li:hover {
+  background: #1b1a1a;
+}
+
+h2 {
+  font-family: "Zilla Slab", serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #eee5e9;
+}
+
+.imagem1 {
+  background: url(../images/brasaBacon.jpg) center no-repeat;
+}
+
+.imagem2 {
+  background: url(../images/cheeseSalada.jpg) center no-repeat;
+}
+
+.imagem3 {
+  background: url(../images/marinaraPicante.jpg) center no-repeat;
+}
+
+.imagem1,
+.imagem2,
+.imagem3 {
+  width: 100%;
+  height: 150px;
+  border-radius: 12px;
+  background-size: cover;
+}
+
+a {
+  display: flex;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: "Zilla Slab", serif;
+  font-weight: 700;
+  color: #000000;
+  background: #f46036;
+  transition: color 0.3s ease, background 0.3s ease;
+}
+
+a:hover {
+  color: #f46036;
+  background: none;
+  border: 2px solid #f46036;
+}
+
+@media (min-width: 320px) and (max-width: 375px) {
+  .imagem1,
+  .imagem2,
+  .imagem3 {
+    height: 172px;
+  }
+}
+
+/*@media (min-width: 320px) and (max-width: 375px) and (orientation: landscape){
+    body {
+        max-width: 555px;
+    }
+
+    main {
+        max-width: 555px;
+    }
+}*/
+
+@media (min-width: 376px) and (max-width: 425px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  main p {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  li {
+    gap: 24px;
+    padding: 24px;
+  }
+  .imagem1,
+  .imagem2,
+  .imagem3 {
+    height: 197px;
+  }
+
+  a {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 597px) {
+  body {
+    max-width: 597px;
+  }
+
+  main {
+    max-width: 597px;
+    gap: 32px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  main p {
+    font-size: 26px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  li {
+    gap: 24px;
+    padding: 24px;
+  }
+  .imagem1,
+  .imagem2,
+  .imagem3 {
+    height: 300px;
+  }
+
+  a {
+    font-size: 26px;
+  }
+}
+
+@media (min-width: 598px) and (max-width: 768px) {
+  body {
+    max-width: 768px;
+  }
+
+  main {
+    max-width: 768px;
+    gap: 32px;
+    margin: 48px 0;
+    padding: 0 48px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  main p {
+    font-size: 34px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  li {
+    gap: 48px;
+    padding: 48px;
+  }
+  .imagem1,
+  .imagem2,
+  .imagem3 {
+    height: 400px;
+  }
+
+  a {
+    font-size: 34px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  body {
+    max-width: 1024px;
+  }
+
+  main {
+    max-width: 1024px;
+    gap: 48px;
+    margin: 48px 0;
+    padding: 0 48px;
+  }
+
+  h1 {
+    font-size: 44px;
+  }
+
+  main p {
+    font-size: 38px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  li {
+    gap: 48px;
+    padding: 48px;
+  }
+  .imagem1,
+  .imagem2,
+  .imagem3 {
+    height: 500px;
+  }
+
+  a {
+    font-size: 38px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+    body {
+    max-width: 1440px;
+  }
+
+  .imagem1,
+  .imagem2,
+  .imagem3 {
+    height: 300px;
+  }
+}
+
+@media (min-width: 2560px) {
+    body {
+    max-width: 2560px;
+  }
+}

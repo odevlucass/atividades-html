@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/contato.css" />
+    <title>Tela Contato</title>
+  </head>
+  <body>
+    <main>
+      <section class="text">
+        <h1>Contate-nos</h1>
+        <p>Entre em contato conosco e agenda uma visita sem compromisso!</p>
+        <p>
+          <strong>Endereço:</strong> Rua Brás de Assis, 709 - Sala 09 - Botucatu
+          - SP
+        </p>
+        <p><strong>Telefone:</strong> (14) 3815-7469 (14) 99655-5830</p>
+
+        <img src="../images/line.svg" alt="" role="presentation" />
+        <div class="icons">
+          <a href="https://www.linkedin.com/in/lucas-monteiro-331149270/" target="_blank" aria-label="Link do linkedin">
+            <img
+              src="../images/facebook.svg"
+              alt="icone facebook"
+              loading="lazy"
+            />
+          </a>
+          <a
+            href="https://www.instagram.com/odevlucass/"
+            target="_blank"
+            aria-label="Link para o instagram"
+            ><img
+              src="../images/instagram.svg"
+              alt="icone instagram"
+              loading="lazy"
+          /></a>
+          <a
+            href="https://www.youtube.com/channel/UChxozrhGuuf3FQsXNVZxFBw"
+            target="_blank"
+            aria-label="Link do youtube"
+            ><img
+              src="../images/youtube.svg"
+              alt="icone youtube"
+              loading="lazy"
+          /></a>
+        </div>
+      </section>
+      <form action="#">
+        <label for="nome">Nome:</label>
+        <input
+          type="text"
+          id="nome"
+          name="nome"
+          placeholder="Digite seu nome"
+        />
+        <label for="numero">Número:</label>
+        <input
+          type="tel"
+          name="numero"
+          id="numero"
+          placeholder="Digite seu número"
+        />
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Digite seu email"
+        />
+        <label for="mensagem">Mensagem:</label>
+        <textarea name="mensagem" id="mensagem"></textarea>
+        <button type="submit" name="submit">Enviar</button>
+      </form>
+    </main>
+  </body>
+</html>
